@@ -12,6 +12,7 @@ export const NavLayout = () => {
                 <li className='nav-li'><NavLink to='/home'>About</NavLink></li>
             </ul>
         </nav>
+        <Outlet />
         </>
     )
 };

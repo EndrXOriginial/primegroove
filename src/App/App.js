@@ -5,13 +5,15 @@ import { Home } from '../Pages/Home';
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavLayout />
+    <BrowserRouter basename='/'>
       <Routes>
-          <Route path='/home' element={<Home />} />
+        <Route path='/' element={<NavLayout />}>
+          <Route index element={<Home />} />
           {/* <Route path='about' element={<About />} /> */}
           {/* <Route path='products' element={<Products />} /> */}
           {/* <Route path='product/:id' element={<Product />} /> */}
+          {/* <Route path='*' element={<ErrorPage />} /> */}
+          </Route>
       </Routes>
     </BrowserRouter>
   );
