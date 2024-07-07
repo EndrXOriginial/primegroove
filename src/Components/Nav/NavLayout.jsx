@@ -5,12 +5,14 @@ export const NavLayout = () => {
     return (
         <>
         <nav className='nav'>
-            {/* <img src='/assets/images/logo.svg' alt='Logo of the company' /> */}
-            <ul className='nav-ul'>
-                <li className='nav-li'><NavLink to='/'>Home</NavLink></li>
-                <li className='nav-li'><NavLink to='/home'>Products</NavLink></li>
-                <li className='nav-li'><NavLink to='/home'>About</NavLink></li>
-            </ul>
+            <div className='wrapper-desktop'>
+                {/* <img src='/assets/images/logo.svg' alt='Logo of the company' /> */}
+                <ul className='nav-ul'>
+                    <li className='nav-li'><NavLink to='/'>Home</NavLink></li>
+                    <li className='nav-li'><NavLink to='/home'>Products</NavLink></li>
+                    <li className='nav-li'><NavLink to='/home'>About</NavLink></li>
+                </ul>
+            </div>
         </nav>
         <Outlet />
         <footer className='footer'>
