@@ -5,7 +5,7 @@ import { Home } from '../Pages/Home';
 
 function App() {
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<NavLayout />}>
           <Route index element={<Home />} />
@@ -13,7 +13,7 @@ function App() {
           {/* <Route path='products' element={<Products />} /> */}
           {/* <Route path='product/:id' element={<Product />} /> */}
           {/* <Route path='*' element={<ErrorPage />} /> */}
-          </Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );
