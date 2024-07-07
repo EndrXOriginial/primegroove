@@ -32,6 +32,12 @@ code {
   margin: 0 auto;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 li {
   list-style: none;
 }
