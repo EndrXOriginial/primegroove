@@ -10,8 +10,8 @@ export const NavLayout = () => {
                 <img src={logo} alt='Logo of the company' />
                 <ul className='nav-ul'>
                     <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/'>Home</NavLink></li>
-                    <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/home'>Products</NavLink></li>
-                    <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/home'>About</NavLink></li>
+                    <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/products'>Products</NavLink></li>
+                    <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/about'>About</NavLink></li>
                 </ul>
             </div>
         </nav>

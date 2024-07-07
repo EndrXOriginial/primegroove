@@ -19,6 +19,7 @@
             .nav-link {
                 display: block;
                 padding: 10px 15px;
+                transition: all .3s ease-in-out;
             }
 
             .nav-link-active {
