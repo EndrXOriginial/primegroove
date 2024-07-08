@@ -1,5 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
+import cart from '../../assets/icon/cart.svg';
+import userIcon from '../../assets/icon/user.svg';
 import './nav.css';
 
 export const NavLayout = () => {
@@ -12,6 +14,8 @@ export const NavLayout = () => {
                     <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/'>Home</NavLink></li>
                     <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/products'>Products</NavLink></li>
                     <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/about'>About</NavLink></li>
+                    {/* <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/cart'><img src={cart} /></NavLink></li> */}
+                    {/* <li className='nav-li'><NavLink className={({isActive}) => 'nav-link' + (isActive ? ' nav-link-active' : '')} to='/profile'><img src={userIcon} /></NavLink></li> */}
                 </ul>
             </div>
         </nav>
