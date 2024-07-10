@@ -109,3 +109,38 @@
         rotate: var(--line-rotate);
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .nav-modale, .nav-burger-menu {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+        background-color: var(--color-dark-white);
+
+        .nav-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 0;
+                margin: 0;
+
+                .nav-link {
+                    display: block;
+                    padding: 15px 15px;
+                }
+
+                .nav-link-active {
+                    background-color: var(--color-white);
+                }
+            }
+        }
+    }
+}
