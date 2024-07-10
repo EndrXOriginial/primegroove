@@ -20,6 +20,24 @@
         width: 4rem;
         height: 4rem;
         fill: var(--color-black);
+        display: block;
+
+        line {
+            stroke-dasharray: 60;
+            transform-box: fill-box;
+        }
+
+        :nth-child(1) {
+            --line-rotate:15deg;
+        }
+
+        :nth-child(2) {
+            --dash-offset:60;
+        }
+
+        :nth-child(3) {
+            --line-rotate:-15deg;
+        }
     }
 }
 
@@ -58,4 +76,36 @@
 .visible {
     transform: translateY(0);
     opacity: 1;
+}
+
+.menu-close-anim {
+    animation: to-close .5s ease-in-out forwards;
+}
+
+.menu-open-anim {
+    animation: to-open .5s ease-in-out forwards;    
+}
+
+@keyframes to-close {
+    0% {
+        stroke-dashoffset: 0;
+        rotate: 0;
+    } 20% {
+        stroke-dashoffset: var(--dash-offset);
+    } 100% {
+        stroke-dashoffset: var(--dash-offset);
+        rotate: var(--line-rotate);
+    }
+}
+
+@keyframes to-open {
+    100% {
+        stroke-dashoffset: 0;
+        rotate: 0;
+    } 80% {
+        stroke-dashoffset: var(--dash-offset);
+    } 0% {
+        stroke-dashoffset: var(--dash-offset);
+        rotate: var(--line-rotate);
+    }
 }
