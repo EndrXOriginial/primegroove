@@ -20,8 +20,6 @@ body {
 
   background-color: var(--color-white);
   color: var(--color-black);
-
-  filter: invert(0);
 }
 
 code {

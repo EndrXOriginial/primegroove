@@ -1,4 +1,5 @@
 import './App.css';
+import 'normalize.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NavLayout } from '../Components/Nav/NavLayout';
 import { Home } from '../Pages/Home';

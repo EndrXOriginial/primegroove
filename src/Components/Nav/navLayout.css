@@ -1,0 +1,61 @@
+.nav {
+    display: none;
+}
+
+.nav-burger-menu {
+    background-color: var(--color-dark-white);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    z-index: 99;
+
+    .menu-svg {
+        width: 4rem;
+        height: 4rem;
+        fill: var(--color-black);
+    }
+}
+
+.nav-modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: var(--color-white);
+
+    z-index: 98;
+
+    text-align: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    transform: translateY(-100%);
+    opacity: 0;
+
+    transition: all .3s;
+
+    .nav-modale-ul {
+        padding: 0;
+
+        .nav-link {
+            display: block;
+            padding: 15px 0;
+        }
+    }
+}
+
+.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
