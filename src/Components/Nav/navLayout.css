@@ -144,3 +144,16 @@
         }
     }
 }
+
+
+/* ---------------------- FOOTER ---------------------- */
+
+.footer {
+    width: 100vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    .footer-p {
+        padding: 5px;
+    }
+}

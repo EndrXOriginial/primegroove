@@ -57,7 +57,7 @@ export const NavLayout = () => {
         <Outlet />
         <footer className='footer'>
             <div className='wrapper-desktop center'>
-                <p className='footer-p'>Company is fake and made with FakeStoreApi</p>
+                <p className='footer-p'>Company is fake and made with the FakeStoreApi</p>
             </div>
         </footer>
         </>
